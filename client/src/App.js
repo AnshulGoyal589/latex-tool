@@ -7,7 +7,7 @@ const App = () => {
   let [data, setData] = useState('');
 
   async function handleChange(text) {
-    await axios.post('http://localhost:8000/api', {
+    await axios.post('https://latex-backend.onrender.com/api', {
       html: text
     }).then((response) => {
       setData(response.data);
